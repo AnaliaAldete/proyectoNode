@@ -11,7 +11,10 @@
   --Orange: #FCA311;
   --Blue: #14213D;
   --Black: #000000;
+}
 
+html {
+  scroll-behavior: smooth;
 }
 
 .body {
@@ -42,6 +45,140 @@
   width: 100%;
   border-bottom: 5px solid var(--Grey);
   padding: 30px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--White);
+  background-color: #14213D;
+}
+
+.fun{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-animated {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  animation: astronaut 8s infinite linear;
+}
+
+.icon-fun {
+  height: 50px;
+  width: 50px;
+}
+
+@keyframes astronaut {
+  0%{
+    left: 0px;
+    top: 0px;    
+  }
+  17%{
+    left: 350px;
+    top: 0px;    
+  }
+  32%{
+    left: 350px;
+    top: 250px;    
+  }
+  47%{
+    left: 0px;
+    top: 250px;    
+  }  
+  62%{
+    left: -350px;
+    top: 250px;  
+  }
+  77%{
+    left: -350px;
+    top: 0px;  
+  }
+  100%{
+    left: 0px;
+    top: 0px;    
+  }    
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 900;
+  -webkit-text-stroke: 1px var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-clip: text;
+  color: transparent;
+  background-size: 300%;
+  background-image: linear-gradient(45deg,var(--Grey), yellow,var(--Orange), red);
+  animation: fun-animation 2s infinite alternate;
+}
+
+@keyframes fun-animation {
+  0% {background-position: left;}
+  100% {background-position: right;}
+}
+
+.title > h3 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.crew-container {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  gap: 25px;
+}
+
+.button-container > button {
+  width: min-content;
+  height: 40px;
+  border: solid 1px var(--White);
+  border-radius: 50px;
+  background-color: var(--appBlack);
+  box-shadow: 5px 3px 7px white;
+  cursor: pointer;
+  font-family: var(--fontPoppins);
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  padding: 0px 20px;
+}
+
+.button-container > button:hover  {
+  box-shadow: none;
+} 
+
+.button-container > button > a,
+.button-container > button > a:focus,
+.button-container > button > a:hover,
+.button-container > button > a:active,
+.button-container > button > a:visited {
+  text-decoration: none; color: var(--White); 
 }
 
 .contact {
@@ -109,5 +246,4 @@
     height: 500px;
     width: 400px;
   }
-
 }
