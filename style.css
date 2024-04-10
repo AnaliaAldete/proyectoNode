@@ -1,6 +1,6 @@
-*{
+* {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Poppins', sans-serif;
   margin: 0;
 }
 
@@ -9,9 +9,9 @@
   --White: #FFFFFF;
   --Grey: #E5E5E5;
   --Orange: #FCA311;
-  --Blue:   #14213D;
-  --Black: #000000; 
-  
+  --Blue: #14213D;
+  --Black: #000000;
+
 }
 
 .body {
@@ -28,7 +28,7 @@
   padding: 15px;
 }
 
-.header > p {
+.header>p {
   background-color: white;
 }
 
@@ -41,6 +41,7 @@
   height: 100vh;
   width: 100%;
   border-bottom: 5px solid var(--Grey);
+  padding: 30px;
 }
 
 .contact {
@@ -65,12 +66,48 @@
   background-color: var(--Blue);
 }
 
+@media screen and (max-width: 430px) {
+  .icon {
+    height: 40px;
+    width: 40px;
+  }
 
-@media screen and (max-width: 800px) {
+  .section {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .form-container {
+    height: 400px;
+    width: 250px;
+  }
 
 }
 
+@media screen and (min-width: 430px) and (max-width: 1024px) {
+  .icon {
+    height: 50px;
+    width: 50px;
+  }
 
-@media screen and (max-width: 600px) {
+  .section {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .form-container {
+    height: 500px;
+    width: 400px;
+  }
 
 }
