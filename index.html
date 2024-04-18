@@ -69,10 +69,10 @@
 			<h3 class="crew-subtitle">¿Tenes ganas de conocernos?</h3>
 			<div class="crew-list-container">
 				<ul class="crew-list">
-					<li><a href="#Ani">Ani</a></li>
-					<li><a href="#Pao">Pao</a></li>
-					<li><a href="#Martin">Martin</a></li>
-					<li><a href="#Danu">Danu</a></li>
+					<li><a href="#Ani" class="home_link">Ani</a></li>
+					<li><a href="#Pao" class="home_link">Pao</a></li>
+					<li><a href="#Martin" class="home_link">Martin</a></li>
+					<li><a href="#Danu" class="home_link">Danu</a></li>
 				</ul>
 			</div>
 		</div>
@@ -110,14 +110,12 @@
 	<section class="Martin section" id="Martin">
 		<div class="information">
 			<h2 class="name">Martin</h2>
-			<img src="./image/imagen de prueba.jpg" class="picture" alt="Martin image" />
+			<img src="./image/martin.jpeg" class="picture" alt="Martin image" />
 			<p class="description">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, alias
-				deserunt eaque quaerat perspiciatis enim mollitia eligendi modi,
-				quibusdam nesciunt doloremque possimus magni saepe voluptatum sequi
-				voluptas, iusto molestias laudantium! Lorem ipsum dolor sit amet consectetur, adipisicing
-				elit. Id distinctio fuga aspernatur quod repellat libero sequi illo eveniet officiis
-				reprehenderit maiores quos sed repudiandae eligendi, soluta dolores laboriosam a nam.
+				Hola, soy Martin desde chico incursioné en el lenguaje de la música. Actualmente soy percusionista de la Filarmónica de Mendoza. Desde hace un tiempo empece a introducirme en esta campo tan amplio y maravilloso de la programación, con sueños de ser un futuro full-stack developer.
+			</p>
+			<p>
+				Te cuento un poco de donde vivo. Y soy mendocino ,mi provicia se caracteriza por su producción agrícola y la industrialización de materias primas como vid, frutas y hortalizas. Por la calidad de sus viñedos y la incorporación de tecnología de vanguardia es líder mundial en la elaboración y comercialización de vinos. Como dicen los muchachos de Kampanga, es una provicia para internarse en una bodega donde hay mucho que tomar!
 			</p>
 		</div>
 	</section>
@@ -139,7 +137,68 @@
 		</div>
 	</section>
 	<section class="contact-section" id="contact">
-		<form class="form-container">Esto lo hace Pao...</form>
+		<form class="form-container" id="form-submit">
+			<h2 class="form-title">Envianos tu comentario</h2>
+			<p class="form-aclaracion">Los campos marcados con <span class="form-asterisk">*</span> son obligatorios</p>
+			<div class="campos-container">
+				<div class="campo-container">
+					<label for="nombre">
+						<span class="form-asterisk">*</span>
+						Nombre:
+					</label>			
+					<input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" class="error" required>	
+					<span class="mensaje-error">El campo no puede estar vacio...</span>
+				</div>
+	
+				<div class="campo-container">
+					<label for="correo">
+						<span class="form-asterisk">*</span>
+						Correo:
+					</label>	
+					<input type="email" name="correo" id="correo" placeholder="Escribe tu correo" class="error" required>
+					<span class="mensaje-error">El campo no puede estar vacio...</span>
+				</div>
+	
+				<div class="campo-container">
+					<label for="mensaje">
+						<span class="form-asterisk">*</span>
+						Mensaje:
+					</label>	
+					<p class="form-aclaracion">Maximo de 200 caracteres permitidos</p>
+					<textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje" maxlength="200" class="error" required></textarea>				
+					<span class="mensaje-error">El campo no puede estar vacio...</span>
+				</div>
+	
+				<div class="campo-container campo-container-integrantes">
+					<p class="campo-container-p">
+						<span class="form-asterisk">*</span>
+						Elige el integrante que quieras que te responda:
+					</p>
+					<select name="integrante" id="integrante" class="error" required>
+						<option value="" selected></option>
+						<option value="Ani">Ani</option>
+						<option value="Danu">Danu</option>
+						<option value="Martin">Martin</option>
+					</select>
+					<span class="mensaje-error">El campo no puede estar vacio...</span>
+				</div>
+	
+				<div class="aceptacion-container">
+					<label for="aceptacion">
+						<span class="form-asterisk">*</span>
+						Acepto recibir la respuesta via mail
+						<img src="./image/Icon.png" class="form-icon" alt="Icon image" />
+					</label>
+					<div class="check-mensaje">
+						<input type="checkbox" name="aceptacion" id="check" class="aceptacion error" required>
+						<span class="mensaje-error">El campo no puede estar vacio...</span>
+					</div>
+				</div>
+	
+				<input type="submit" value="Enviar" class="form-submit">
+			</div>
+		</form>
+
 	</section>
 	<footer class="footer">
 		<nav>
