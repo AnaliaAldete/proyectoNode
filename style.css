@@ -299,41 +299,37 @@ html {
 }
 
 .home_link {
-	border: solid 1px var(--White);
-	border-radius: 50px;
-	box-shadow: 5px 3px 7px white;
-	font-weight: 600;
-	padding: 10px 20px;
+  border: solid 1px var(--White);
+  border-radius: 50px;
+  box-shadow: 5px 3px 7px white;
+  font-weight: 600;
+  padding: 10px 20px;
 }
 
 .home_link:hover {
-	box-shadow: none;
+  box-shadow: none;
 }
 
-.crew-list-container > ul > li > a,
-.crew-list-container > ul > li > a:focus,
-.crew-list-container > ul > li > a:hover,
-.crew-list-container > ul > li > a:active,
-.crew-list-container > ul > li > a:visited {
-	text-decoration: none;
-	color: var(--White);
+.crew-list-container>ul>li>a,
+.crew-list-container>ul>li>a:focus,
+.crew-list-container>ul>li>a:hover,
+.crew-list-container>ul>li>a:active,
+.crew-list-container>ul>li>a:visited {
+  text-decoration: none;
+  color: var(--White);
 }
 
 /*---MOBILE SCREEN (Small size)---*/
-@media screen and (max-width: 350px) {
-  .home-icon-fun {
-    visibility: hidden;
-  }
-}
-
 @media screen and (max-width: 430px) {
   .home-title {
     font-size: 22px;
     text-align: center;
+    margin: 10px;
   }
 
   .home-title>h3 {
     font-size: 35px;
+    margin-bottom: 15px;
   }
 
   @keyframes astronaut {
@@ -343,27 +339,27 @@ html {
     }
 
     17% {
-      left: 150px;
+      left: 50%;
       top: 0px;
     }
 
     32% {
-      left: 150px;
-      top: 250px;
+      left: 50%;
+      top: 100%;
     }
 
     47% {
       left: 0px;
-      top: 250px;
+      top: 100%;
     }
 
     62% {
-      left: -150px;
-      top: 250px;
+      left: -50%;
+      top: 100%;
     }
 
     77% {
-      left: -150px;
+      left: -50%;
       top: 0px;
     }
 
@@ -381,11 +377,13 @@ html {
   .crew-subtitle {
     font-size: 16px;
     font-weight: 600;
+    text-align: center;
   }
 
   .crew-list {
     flex-wrap: wrap;
     justify-content: center;
+    row-gap: 50px;
   }
 
 }
@@ -395,11 +393,12 @@ html {
   .home-title {
     font-size: 24px;
     text-align: center;
-    margin-top: 10px;
+    margin: 30px;
   }
 
   .home-title>h3 {
     font-size: 45px;
+    margin-bottom: 15px;
   }
 
   .home-icon-fun {
@@ -411,9 +410,7 @@ html {
     font-size: 18px;
     font-weight: 700;
   }
-}
 
-@media screen and (min-width: 430px) and (max-width: 500px) {
   @keyframes astronaut {
     0% {
       left: 0px;
@@ -421,27 +418,27 @@ html {
     }
 
     17% {
-      left: 200px;
+      left: 50%;
       top: 0px;
     }
 
     32% {
-      left: 200px;
-      top: 250px;
+      left: 50%;
+      top: 90%;
     }
 
     47% {
       left: 0px;
-      top: 250px;
+      top: 90%;
     }
 
     62% {
-      left: -200px;
-      top: 250px;
+      left: -50%;
+      top: 90%;
     }
 
     77% {
-      left: -200px;
+      left: -50%;
       top: 0px;
     }
 
@@ -450,47 +447,6 @@ html {
       top: 0px;
     }
   }
-
-}
-
-@media screen and (min-width: 500px) and (max-width: 730px) {
-  @keyframes astronaut {
-    0% {
-      left: 0px;
-      top: 0px;
-    }
-
-    17% {
-      left: 265px;
-      top: 0px;
-    }
-
-    32% {
-      left: 265px;
-      top: 250px;
-    }
-
-    47% {
-      left: 0px;
-      top: 250px;
-    }
-
-    62% {
-      left: -265px;
-      top: 250px;
-    }
-
-    77% {
-      left: -265px;
-      top: 0px;
-    }
-
-    100% {
-      left: 0px;
-      top: 0px;
-    }
-  }
-
 }
 
 /*---LAPTOP SCREEN---*/
@@ -546,34 +502,101 @@ html {
 
 /*------------------------------ INICIO SECCION SECTION----------------------------------------------------------- */
 .information {
-  display: flex;
-  flex-direction: column;
   border-bottom: 5px solid var(--Grey);
+}
+
+.presentation {
+  display: flex;
+  margin: 50px 15vh 50px 15vh;
+  align-items: center;
+}
+
+.textPresentation {
+  flex-direction: column;
+  align-content: center;
+  margin-left: 10vh;
+}
+
+.textPresentation>p {
+  font-size: 18px;
 }
 
 .name {
   font-size: 28px;
-  text-align: center;
-  margin: 15px;
+  justify-content: flex-start;
+  margin-bottom: 5vh;
 }
 
 .picture {
   width: 300px;
   height: 350px;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15);
-  align-self: center;
 }
 
-.description {
-  font-size: 18px;
-  margin: 40px 15vh 40px 15vh;
+.cityPresentation {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 0px 15vh 50px 15vh;
 }
+
+.cityPicture {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15);
+  justify-content: flex-end;
+}
+
+.cityPresentation>p {
+  margin-right: 10vh;
+  font-size: 18px;
+}
+
+.link_contact_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 8vh;
+}
+
+.link_contacto_section {
+  font-size: 22px;
+  color: var(--Black);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.icon-telescope {
+  width: 24px;
+  height: 24px;
+}
+
 
 /*---MOBILE SCREEN (Small size)---*/
 @media screen and (max-width: 430px) {
+  .presentation {
+    margin: 20px 5vh 20px 5vh;
+    flex-direction: column;
+  }
+
+  .textPresentation {
+    margin-left: 0vh;
+  }
+
   .name {
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    text-align: center;
+
+  }
+
+  .textPresentation>p {
+    font-size: 14px;
   }
 
   .picture {
@@ -581,29 +604,125 @@ html {
     height: 250px;
   }
 
-  .description {
+  .cityPresentation {
+    margin: 0px 5vh 20px 5vh;
+    flex-direction: column;
+  }
+
+  .cityPresentation>p {
+    margin-right: 0vh;
+    font-size: 14px;
+    margin-top: 3vh;
+  }
+
+  .cityPicture {
+    width: 200px;
+    height: 125px;
+  }
+
+  .link_contact_section {
+    margin-bottom: 3vh;
+  }
+
+  .link_contacto_section {
     font-size: 16px;
-    margin: 30px 5vh 20px 5vh;
+    text-align: center;
   }
 }
 
 /*---TABLET SCREEN (Medium size)---*/
 @media screen and (min-width: 430px) and (max-width: 730px) {
-  .picture {
-    width: 200px;
-    height: 250px;
+  .presentation {
+    margin: 30px 8vh 30px 8vh;
+    flex-direction: column;
   }
 
-  .description {
+  .textPresentation {
+    margin-left: 0vh;
+  }
+
+  .name {
+    font-size: 22px;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    text-align: center;
+
+  }
+
+  .textPresentation>p {
     font-size: 16px;
-    margin: 30px 8vh 20px 8vh;
+  }
+
+  .picture {
+    width: 250px;
+    height: 300px;
+  }
+
+  .cityPresentation {
+    margin: 0px 8vh 30px 8vh;
+    flex-direction: column;
+  }
+
+  .cityPresentation>p {
+    margin-right: 0vh;
+    font-size: 16px;
+    margin-top: 3vh;
+  }
+
+  .cityPicture {
+    width: 250px;
+    height: 150px;
+  }
+
+  .link_contact_section {
+    margin-bottom: 5vh;
+  }
+
+  .link_contacto_section {
+    font-size: 18px;
   }
 }
 
 /*---LAPTOP SCREEN---*/
 @media screen and (min-width: 730px) and (max-width: 930px) {
-  .description {
-    margin: 30px 10vh 30px 10vh;
+  .presentation {
+    margin: 35px 12vh 35px 12vh;
+  }
+
+  .textPresentation {
+    margin-left: 5vh;
+  }
+
+  .name {
+    font-size: 24px;
+    margin-bottom: 3vh;
+  }
+
+  .textPresentation>p {
+    font-size: 16px;
+  }
+
+  .picture {
+    width: 250px;
+    height: 300px;
+  }
+
+  .cityPresentation {
+    margin: 0px 12vh 35px 12vh;
+  }
+
+  .cityPresentation>p {
+    margin-right: 5vh;
+    font-size: 16px;
+  }
+
+  .cityPicture {
+    width: 250px;
+    height: 150px;
+  }
+
+  .link_contacto_section {
+    font-size: 18px;
   }
 }
 
@@ -611,21 +730,21 @@ html {
 .contact-section {
   height: fit-content;
   width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--White);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--White);
 }
 
 .form-container {
-	height: fit-content;
-	width: 65%;
+  height: fit-content;
+  width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-	background-color: var(--White);
+  background-color: var(--White);
   padding: 10px 0px;
 }
 
@@ -642,7 +761,7 @@ html {
   color: gray;
 }
 
-.campos-container{
+.campos-container {
   height: 100%;
   width: 60%;
   display: flex;
@@ -658,28 +777,28 @@ html {
   gap: 5px;
 }
 
-.campo-container > input {
+.campo-container>input {
   height: 40px;
   width: 100%;
   border-radius: 50px;
   padding: 15px;
 }
 
-.campo-container > textarea {
+.campo-container>textarea {
   height: 120px;
   width: 100%;
   border-radius: 15px;
   padding: 15px;
 }
 
-.campo-container > select {
+.campo-container>select {
   height: 40px;
   width: 150px;
   border-radius: 50px;
   padding: 5px 15px;
 }
 
-.campo-container > label {
+.campo-container>label {
   font-size: 16px;
   font-weight: 500;
 }
@@ -687,14 +806,14 @@ html {
 .campo-container-p {
   font-size: 16px;
   font-weight: 500;
-}  
+}
 
-.campo-container > input:focus,
-.campo-container > input:active,
-.campo-container > input:visited,
-.campo-container > input:focus,
-.campo-container > textarea:focus,
-.campo-container > select:focus {
+.campo-container>input:focus,
+.campo-container>input:active,
+.campo-container>input:visited,
+.campo-container>input:focus,
+.campo-container>textarea:focus,
+.campo-container>select:focus {
   background-color: var(--White);
   outline: none;
 }
@@ -707,29 +826,29 @@ html {
 }
 
 .form-asterisk {
-	color: var(--Orange);
+  color: var(--Orange);
 }
 
 .form-icon {
-	height: 20px;
-	width: 20px;
+  height: 20px;
+  width: 20px;
 }
 
 
-.error{
-	background-color: var(--White);
-	border: solid 4px var(--Orange);
+.error {
+  background-color: var(--White);
+  border: solid 4px var(--Orange);
 }
 
-.rm-error{
-	background-color: var(--White);
-	border: solid 4px var(--Blue);
+.rm-error {
+  background-color: var(--White);
+  border: solid 4px var(--Blue);
 }
 
-.mensaje-error{
-	font-size: 12px;
-	font-weight: 400;
-	color: var(--Orange);
+.mensaje-error {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--Orange);
 }
 
 .aceptacion-container {
@@ -752,10 +871,10 @@ html {
 
 .form-submit {
   height: 40px;
-	width: 150px;
+  width: 150px;
   font-size: 16px;
-	font-weight: 600;
-	padding: 10px 20px;
+  font-weight: 600;
+  padding: 10px 20px;
   border-radius: 50px;
   border: none;
   background-color: var(--Blue);
@@ -764,7 +883,7 @@ html {
 }
 
 .form-submit:hover {
-	background-color: #14213dc9;
+  background-color: #14213dc9;
 }
 
 .form-submit,
@@ -772,9 +891,9 @@ html {
 .form-submit:hover,
 .form-submit:active,
 .form-submit:visited {
-	text-decoration: none;
-	color: var(--White);
-} 
+  text-decoration: none;
+  color: var(--White);
+}
 
 /*---MOBILE SCREEN (Small size)---*/
 @media screen and (max-width: 430px) {
@@ -793,29 +912,29 @@ html {
     margin-bottom: 5px;
   }
 
-  .campos-container{
+  .campos-container {
     width: 100%;
     gap: 12px;
   }
 
-  .campo-container > label {
+  .campo-container>label {
     font-size: 12px;
     font-weight: 400;
   }
 
-  .campo-container > input {
+  .campo-container>input {
     height: 30px;
     font-size: 12px;
     font-weight: 400;
   }
 
-  .campo-container > textarea {
+  .campo-container>textarea {
     height: 60px;
     font-size: 12px;
     font-weight: 400;
   }
 
-  .campo-container > select {
+  .campo-container>select {
     height: 35px;
     font-size: 12px;
     font-weight: 400;
@@ -831,19 +950,19 @@ html {
     width: 16px;
   }
 
-  .mensaje-error{
+  .mensaje-error {
     font-size: 10px;
   }
 
-  .error{
+  .error {
     border: solid 2px var(--Orange);
   }
 
-  .rm-error{
+  .rm-error {
     border: solid 2px var(--Blue);
   }
 
-  .aceptacion-container > label {
+  .aceptacion-container>label {
     font-size: 12px;
     font-weight: 400;
     margin-bottom: 5px;
@@ -879,29 +998,29 @@ html {
     margin-bottom: 3px;
   }
 
-  .campos-container{
+  .campos-container {
     width: 100%;
     gap: 15px;
   }
 
-  .campo-container > label {
+  .campo-container>label {
     font-size: 14px;
     font-weight: 400;
   }
 
-  .campo-container > input {
+  .campo-container>input {
     height: 35px;
     font-size: 14px;
     font-weight: 400;
   }
 
-  .campo-container > textarea {
+  .campo-container>textarea {
     height: 70px;
     font-size: 14px;
     font-weight: 400;
   }
 
-  .campo-container > select {
+  .campo-container>select {
     height: 35px;
     font-size: 14px;
     font-weight: 400;
@@ -917,19 +1036,19 @@ html {
     width: 16px;
   }
 
-  .mensaje-error{
+  .mensaje-error {
     font-size: 11px;
   }
 
-  .error{
+  .error {
     border: solid 3px var(--Orange);
   }
 
-  .rm-error{
+  .rm-error {
     border: solid 3px var(--Blue);
   }
 
-  .aceptacion-container > label {
+  .aceptacion-container>label {
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 5px;
@@ -965,29 +1084,29 @@ html {
     margin-bottom: 5px;
   }
 
-  .campos-container{
+  .campos-container {
     width: 100%;
     gap: 15px;
   }
 
-  .campo-container > label {
+  .campo-container>label {
     font-size: 16px;
     font-weight: 500;
   }
 
-  .campo-container > input {
+  .campo-container>input {
     height: 40px;
     font-size: 16px;
     font-weight: 500;
   }
 
-  .campo-container > textarea {
+  .campo-container>textarea {
     height: 80px;
     font-size: 16px;
     font-weight: 500;
   }
 
-  .campo-container > select {
+  .campo-container>select {
     height: 40px;
     font-size: 16px;
     font-weight: 500;
@@ -1003,19 +1122,19 @@ html {
     width: 18px;
   }
 
-  .mensaje-error{
+  .mensaje-error {
     font-size: 12px;
   }
 
-  .error{
+  .error {
     border: solid 4px var(--Orange);
   }
 
-  .rm-error{
+  .rm-error {
     border: solid 4px var(--Blue);
   }
 
-  .aceptacion-container > label {
+  .aceptacion-container>label {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 8px;
