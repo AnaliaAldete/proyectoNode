@@ -1,318 +1,442 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" href="./image/Icon.png" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&family=Quantico&family=Source+Code+Pro:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			href="https://unpkg.com/css.gg@2.0.0/icons/css/trash.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://unpkg.com/css.gg@2.0.0/icons/css/copy.css"
+			rel="stylesheet"
+		/>
 
-<head>
-	<meta charset="UTF-8" />
-	<link rel="icon" href="./image/Icon.png" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&family=Quantico&family=Source+Code+Pro:wght@400;700&display=swap"
-		rel="stylesheet" />
-	<link rel="stylesheet" href="./style.css" />
-	<link href="https://unpkg.com/css.gg@2.0.0/icons/css/trash.css" rel="stylesheet" />
-	<link href="https://unpkg.com/css.gg@2.0.0/icons/css/copy.css" rel="stylesheet" />
+		<link rel="apple-touch-icon" href="./image/Icon.png" />
+		<meta name="theme-color" content="#FCA311" />
+		<meta property="og:title" content="Grupo 1" data-rh="true" />
+		<meta
+			property="og:description"
+			content="This app was made using HTML, CSS, JavaScript"
+			data-rh="true"
+		/>
+		<meta property="og:image" content="" data-rh="true" />
+		<meta name="twitter.card" content="summary" />
+		<script
+			src="https://kit.fontawesome.com/2b4110b56c.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Grupo 1</title>
+	</head>
 
-	<link rel="apple-touch-icon" href="./image/Icon.png" />
-	<meta name="theme-color" content="#FCA311" />
-	<meta property="og:title" content="Grupo 1" data-rh="true" />
-	<meta property="og:description" content="This app was made using HTML, CSS, JavaScript" data-rh="true" />
-	<meta property="og:image" content="" data-rh="true" />
-	<meta name="twitter.card" content="summary" />
-	<script src="https://kit.fontawesome.com/2b4110b56c.js" crossorigin="anonymous"></script>
-	<title>Grupo 1</title>
-</head>
-
-<body>
-	<header class="header">
-		<img src="./image/Icon.png" class="icon" alt="Icon image" />
-		<button class="btn_menu_hamburguesa" id="btn_menu_hamburguesa">
-			<i class="fa-solid fa-bars icono_hamburguesa" id="icono-hamburguesa"></i>
-		</button>
-
-		<nav class="navbar" id="navbar">
-			<button class="btn_cerrar_menu" id="btn_cerrar_menu">
-				<i class="fa-solid fa-times icono_x" id="icono_x"></i>
+	<body>
+		<!-- INICIO HEADER -->
+		<header class="header">
+			<img src="./image/Icon.png" class="icon" alt="Icon image" />
+			<button class="btn_menu_hamburguesa" id="btn_menu_hamburguesa">
+				<i
+					class="fa-solid fa-bars icono_hamburguesa"
+					id="icono-hamburguesa"
+				></i>
 			</button>
+			<!-- INICIO MENU DE NAVEGACIÓN -->
+			<nav class="navbar" id="navbar">
+				<button class="btn_cerrar_menu" id="btn_cerrar_menu">
+					<i class="fa-solid fa-times icono_x" id="icono_x"></i>
+				</button>
 
-			<ul class="list-nav">
-				<li class="item_nav">
-					<a href="#home" class="link_nav">Quienes somos</a>
-				</li>
-				<li class="item_nav"><a href="#Ani" class="link_nav">Ani</a></li>
-				<li class="item_nav"><a href="#Pao" class="link_nav">Pao</a></li>
-				<li class="item_nav">
-					<a href="#Martin" class="link_nav">Martín</a>
-				</li>
-				<li class="item_nav"><a href="#Danu" class="link_nav">Danu</a></li>
-				<li class="item_nav_contacto">
-					<a href="#contact" class="link_contacto">Contacto</a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<section class="home-section" id="home">
-		<div class="home-fun">
-			<div class="home-icon-animated">
-				<img src="./image/Icon.png" class="home-icon-fun" alt="Icon image" />
-			</div>
-			<div class="home-title">
-				<h2>¡Hola,</h2>
-				<h2>somos los fantasticos del</h2>
-				<h3>Grupo 1!</h3>
-			</div>
-		</div>
-		<div class="crew-container">
-			<h3 class="crew-subtitle">¿Tenes ganas de conocernos?</h3>
-			<div class="crew-list-container">
-				<ul class="crew-list">
-					<li><a href="#Ani" class="home_link">Ani</a></li>
-					<li><a href="#Pao" class="home_link">Pao</a></li>
-					<li><a href="#Martin" class="home_link">Martin</a></li>
-					<li><a href="#Danu" class="home_link">Danu</a></li>
+				<ul class="list-nav">
+					<li class="item_nav">
+						<a href="#home" class="link_nav">Quienes somos</a>
+					</li>
+					<li class="item_nav"><a href="#Ani" class="link_nav">Ani</a></li>
+					<li class="item_nav"><a href="#Oscar" class="link_nav">Oscar</a></li>
+					<li class="item_nav">
+						<a href="#Martin" class="link_nav">Martín</a>
+					</li>
+					<li class="item_nav"><a href="#Danu" class="link_nav">Danu</a></li>
+					<li class="item_nav_contacto">
+						<a href="#contact" class="link_contacto">Contacto</a>
+					</li>
 				</ul>
-			</div>
-		</div>
-	</section>
-	<section class="Ani section" id="Ani">
-		<div class="information">
-			<div class="presentation">
-				<div>
-					<img src="./image/imagen de prueba.jpg" class="picture" alt="Ani image" />
+			</nav>
+		</header>
+		<!-- INICIO SECCION HOME -->
+		<section class="home-section" id="home">
+			<div class="home-fun">
+				<div class="home-icon-animated">
+					<img src="./image/Icon.png" class="home-icon-fun" alt="Icon image" />
 				</div>
-				<div class="textPresentation">
-					<h2 class="name">Ani</h2>
-					<p class="description">
+				<div class="home-title">
+					<h2>¡Hola,</h2>
+					<h2>somos los fantasticos del</h2>
+					<h3>Grupo 1!</h3>
+				</div>
+			</div>
+			<div class="crew-container">
+				<h3 class="crew-subtitle">¿Tenes ganas de conocernos?</h3>
+				<div class="crew-list-container">
+					<ul class="crew-list">
+						<li><a href="#Ani" class="home_link">Ani</a></li>
+						<li><a href="#Oscar" class="home_link">Oscar</a></li>
+						<li><a href="#Martin" class="home_link">Martin</a></li>
+						<li><a href="#Danu" class="home_link">Danu</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- INICIO SECCION ANI -->
+		<section class="Ani section" id="Ani">
+			<div class="information">
+				<div class="presentation">
+					<div>
+						<img src="./image/ani.jpg" class="picture" alt="Ani image" />
+					</div>
+					<div class="textPresentation">
+						<h2 class="name">Ani</h2>
+						<p class="description">
+							Hola, mi nombre es Analía y soy profesora de Matemática. Hace 12
+							años ejerzo esta profesión de la cual disfruto mucho. Cada día es
+							un nuevo desafío para mí, tratando de despertar la curiosidad en
+							mis alumnos y ayudarles a desarrollar habilidades para enfrentar
+							los desafíos que presenta esta disciplina. Por las mañanas, doy
+							clases, y por las tardes, me encuentro inmersa en el mundo del
+							Front End, estudiando en ADA y simultáneamente realizando un curso
+							de Node.js en Codo a Codo para explorar el mundo del Full Stack.
+						</p>
+					</div>
+				</div>
+				<div class="cityPresentation">
+					<div>
+						<img
+							src="./image/cordoba2.jpg"
+							class="cityPicture"
+							alt="imagen de Córdoba"
+						/>
+					</div>
+					<p>
+						Vivo en Alta Gracia, Córdoba. Mi provincia es simplemente
+						espectacular, con paisajes montañosos hermosos, ríos de todo tipo de
+						temperaturas y bosques que son un verdadero regalo para los
+						sentidos. Cada experiencia al aire libre aquí es única e
+						inolvidable. Vivir en este lugar tan especial es un privilegio que
+						me llena de alegría cada día. En mi tiempo libre, me encanta
+						conectarme con la naturaleza. Disfruto del trekking y de pasar
+						tiempo en el río, que lo tengo cerquita. Relajarme escuchando el
+						sonido del agua o respirar el aire puro me permiten recargar
+						energías. Para mí, la conexión con la naturaleza es fundamental para
+						mantener el equilibrio y la armonía en mi vida.
+					</p>
+				</div>
+				<div class="link_contact_section">
+					<a href="#contact" class="link_contacto_section">
+						¡Te invito a contactarme!
+						<img
+							src="./image/icon-telescope.png"
+							class="icon-telescope"
+							alt="Icon image"
+						/>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- INICIO SECCION OSCAR -->
+		<section class="Oscar section" id="Oscar">
+			<div class="information">
+				<div class="presentation">
+					<div>
+						<img
+							src="./image/imagendeprueba.jpg"
+							class="picture"
+							alt="Oscar image"
+						/>
+					</div>
+					<div class="textPresentation">
+						<h2 class="name">Oscar</h2>
+						<p class="description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+							alias deserunt eaque quaerat perspiciatis enim mollitia eligendi
+							modi, quibusdam nesciunt doloremque possimus magni saepe
+							voluptatum sequi voluptas, iusto molestias laudantium! Lorem ipsum
+							dolor sit amet consectetur adipisicing elit. Libero quaerat
+							asperiores accusantium, dolorem culpa officia, harum officiis
+							perferendis, deserunt nostrum dignissimos? Accusantium debitis
+							aperiam et doloribus, voluptatum tempore provident ullam!
+						</p>
+					</div>
+				</div>
+				<div class="cityPresentation">
+					<div>
+						<img
+							src="./image/imagendeprueba2.jpg"
+							class="cityPicture"
+							alt="imagen de cuidad"
+						/>
+					</div>
+					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, alias
 						deserunt eaque quaerat perspiciatis enim mollitia eligendi modi,
 						quibusdam nesciunt doloremque possimus magni saepe voluptatum sequi
-						voluptas, iusto molestias laudantium! Lorem ipsum dolor sit amet, consectetur adipisicing
-						elit. Numquam, eligendi? Iusto quaerat debitis temporibus voluptates reiciendis? Ab
-						suscipit quas enim voluptate sapiente numquam tempora ipsum cupiditate similique odi
+						voluptas, iusto molestias laudantium! Lorem ipsum dolor sit amet,
+						consectetur adipisicing elit. Numquam, eligendi? Iusto quaerat
+						debitis temporibus voluptates reiciendis? Ab suscipit quas enim
+						voluptate sapiente numquam tempora ipsum cupiditate similique odi
 						Laboriosam, cupiditate?
 					</p>
 				</div>
-			</div>
-			<div class="cityPresentation">
-				<div>
-					<img src="./image/imagen de prueba 2.jpg" class="cityPicture" />
-				</div>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, alias
-					deserunt eaque quaerat perspiciatis enim mollitia eligendi modi,
-					quibusdam nesciunt doloremque possimus magni saepe voluptatum sequi
-					voluptas, iusto molestias laudantium! Lorem ipsum dolor sit amet, consectetur adipisicing
-					elit. Numquam, eligendi? Iusto quaerat debitis temporibus voluptates reiciendis? Ab
-					suscipit quas enim voluptate sapiente numquam tempora ipsum cupiditate similique odi
-					Laboriosam, cupiditate?
-				</p>
-			</div>
-			<div class="link_contact_section">
-				<a href="#contact" class="link_contacto_section">
-					¡Te invito a contactarme!
-					<img src="./image/icon-telescope.png" class="icon-telescope" alt="Icon image" />
-				</a>
-			</div>
-		</div>
-	</section>
-	<section class="Pao section" id="Pao">
-		<div class="information">
-			<div class="presentation">
-				<div>
-					<img src="./image/imagen de prueba.jpg" class="picture" alt="Pao image" />
-				</div>
-				<div class="textPresentation">
-					<h2 class="name">Pao</h2>
-					<p class="description">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, alias
-						deserunt eaque quaerat perspiciatis enim mollitia eligendi modi,
-						quibusdam nesciunt doloremque possimus magni saepe voluptatum sequi
-						voluptas, iusto molestias laudantium! Lorem ipsum dolor sit amet consectetur adipisicing
-						elit. Libero quaerat asperiores accusantium, dolorem culpa officia, harum officiis
-						perferendis, deserunt nostrum dignissimos? Accusantium debitis aperiam et doloribus,
-						voluptatum tempore provident ullam!
-					</p>
+				<div class="link_contact_section">
+					<a href="#contact" class="link_contacto_section">
+						¡Te invito a contactarme!
+						<img
+							src="./image/icon-telescope.png"
+							class="icon-telescope"
+							alt="Icon image"
+						/>
+					</a>
 				</div>
 			</div>
-			<div class="cityPresentation">
-				<div>
-					<img src="./image/imagen de prueba 2.jpg" class="cityPicture" />
-				</div>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, alias
-					deserunt eaque quaerat perspiciatis enim mollitia eligendi modi,
-					quibusdam nesciunt doloremque possimus magni saepe voluptatum sequi
-					voluptas, iusto molestias laudantium! Lorem ipsum dolor sit amet, consectetur adipisicing
-					elit. Numquam, eligendi? Iusto quaerat debitis temporibus voluptates reiciendis? Ab
-					suscipit quas enim voluptate sapiente numquam tempora ipsum cupiditate similique odi
-					Laboriosam, cupiditate?
-				</p>
-			</div>
-			<div class="link_contact_section">
-				<a href="#contact" class="link_contacto_section">
-					¡Te invito a contactarme!
-					<img src="./image/icon-telescope.png" class="icon-telescope" alt="Icon image" />
-				</a>
-			</div>
-		</div>
-	</section>
-	<section class="Martin section" id="Martin">
-		<div class="information">
-			<div class="presentation">
-				<div>
-					<img src="./image/martin.jpeg" class="picture" alt="Martin image" />
-				</div>
-				<div class="textPresentation">
-					<h2 class="name">Martin</h2>
-					<p class="description">
-						Hola, soy Martin desde chico incursioné en el lenguaje de la música. Actualmente soy percusionista de la Filarmónica de Mendoza. Desde hace un tiempo empece a introducirme en esta campo tan amplio y maravilloso de la programación, con sueños de ser un futuro full-stack developer.
-					</p>
-				</div>
-			</div>
-			<div class="cityPresentation">
-				<div>
-					<img src="./image/mendoza.jpeg" class="cityPicture" />
-				</div>
-				<p>
-					Te cuento un poco de donde vivo. Y soy mendocino, mi provicia se caracteriza por su producción agrícola y la industrialización de materias primas como vid, frutas y hortalizas. Por la calidad de sus viñedos y la incorporación de tecnología de vanguardia es líder mundial en la elaboración y comercialización de vinos. Como dicen los muchachos de Kampanga, es una provicia para internarse en una bodega donde hay mucho que tomar!
-				</p>
-			</div>
-			<div class="link_contact_section">
-				<a href="#contact" class="link_contacto_section">
-					¡Te invito a contactarme!
-					<img src="./image/icon-telescope.png" class="icon-telescope" alt="Icon image" />
-				</a>
-			</div>
-		</div>
-	</section>
-	<section class="Danu section" id="Danu">
-		<div class="information">
-			<div class="presentation">
-				<div>
-					<img src="./image/danu.jpg" class="picture" alt="Danu image" />
-				</div>
-				<div class="textPresentation">
-					<h2 class="name">Daniela Gil</h2>
-					<p>
-						Hola, soy Danu una apasionada del mundo IT con una trayectoria en constante evolución. En poco más de un año y medio, he explorado diversas áreas dentro de la tecnología de la información, comenzando mi viaje en el diseño UX/UI y luego aventurándome en el desarrollo web con JavaScript. A lo largo de este tiempo, he adquirido habilidades en React y React Native, y actualmente estoy inmersa en mi formación para convertirme en una desarrolladora full stack con Node.js.
-					</p>
-				</div>
-			</div>
-			<div class="cityPresentation">
-				<div>
-					<img src="./image/jujuy.jpg" class="cityPicture" />
-				</div>
-				<p>
-					Déjame contarte un poco sobre mi provincia, Jujuy. Conocida por sus coloridos paisajes y su rica cultura. Desde la Quebrada de Humahuaca hasta las selvas de Yungas, mi provincia ofrece una variedad de paisajes impresionantes. Además, la cocina tradicional, también es muy conocida con platos como el locro y las empanadas.
-				</p>
-			</div>
-			<div class="link_contact_section">
-				<a href="#contact" class="link_contacto_section">
-					¡Te invito a contactarme!
-					<img src="./image/icon-telescope.png" class="icon-telescope" alt="Icon image" />
-				</a>
-			</div>
-		</div>
-	</section>
-	<section class="contact-section" id="contact">
-		<form class="form-container" id="form-submit">
-			<h2 class="form-title">Envianos tu comentario</h2>
-			<p class="form-aclaracion">Los campos marcados con <span class="form-asterisk">*</span> son obligatorios</p>
-			<div class="campos-container">
-				<div class="campo-container">
-					<label for="nombre">
-						<span class="form-asterisk">*</span>
-						Nombre:
-					</label>
-					<input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" class="error" required>
-					<span class="mensaje-error">El campo no puede estar vacio...</span>
-				</div>
-
-				<div class="campo-container">
-					<label for="correo">
-						<span class="form-asterisk">*</span>
-						Correo:
-					</label>
-					<input type="email" name="correo" id="correo" placeholder="Escribe tu correo" class="error"
-						required>
-					<span class="mensaje-error">El campo no puede estar vacio...</span>
-				</div>
-
-				<div class="campo-container">
-					<label for="mensaje">
-						<span class="form-asterisk">*</span>
-						Mensaje:
-					</label>
-					<p class="form-aclaracion">Maximo de 200 caracteres permitidos</p>
-					<textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje" maxlength="200" class="error"
-						required></textarea>
-					<span class="mensaje-error">El campo no puede estar vacio...</span>
-				</div>
-
-				<div class="campo-container campo-container-integrantes">
-					<p class="campo-container-p">
-						<span class="form-asterisk">*</span>
-						Elige el integrante que quieras que te responda:
-					</p>
-					<select name="integrante" id="integrante" class="error" required>
-						<option value="" selected></option>
-						<option value="Ani">Ani</option>
-						<option value="Danu">Danu</option>
-						<option value="Martin">Martin</option>
-					</select>
-					<span class="mensaje-error">El campo no puede estar vacio...</span>
-				</div>
-
-				<div class="aceptacion-container">
-					<label for="aceptacion">
-						<span class="form-asterisk">*</span>
-						Acepto recibir la respuesta via mail
-						<img src="./image/Icon.png" class="form-icon" alt="Icon image" />
-					</label>
-					<div class="check-mensaje">
-						<input type="checkbox" name="aceptacion" id="check" class="aceptacion error" required>
-						<span class="mensaje-error">El campo no puede estar vacio...</span>
+		</section>
+		<!-- INICIO SECCION MARTIN-->
+		<section class="Martin section" id="Martin">
+			<div class="information">
+				<div class="presentation">
+					<div>
+						<img src="./image/martin.jpeg" class="picture" alt="Martin image" />
+					</div>
+					<div class="textPresentation">
+						<h2 class="name">Martin</h2>
+						<p class="description">
+							Hola, soy Martin desde chico incursioné en el lenguaje de la
+							música. Actualmente soy percusionista de la Filarmónica de
+							Mendoza. Desde hace un tiempo empece a introducirme en esta campo
+							tan amplio y maravilloso de la programación, con sueños de ser un
+							futuro full-stack developer.
+						</p>
 					</div>
 				</div>
-
-				<input type="submit" value="Enviar" class="form-submit">
+				<div class="cityPresentation">
+					<div>
+						<img
+							src="./image/mendoza.jpeg"
+							class="cityPicture"
+							alt="imagen de Mendoza"
+						/>
+					</div>
+					<p>
+						Te cuento un poco de donde vivo. Y soy mendocino, mi provicia se
+						caracteriza por su producción agrícola y la industrialización de
+						materias primas como vid, frutas y hortalizas. Por la calidad de sus
+						viñedos y la incorporación de tecnología de vanguardia es líder
+						mundial en la elaboración y comercialización de vinos. Como dicen
+						los muchachos de Kampanga, es una provicia para internarse en una
+						bodega donde hay mucho que tomar!
+					</p>
+				</div>
+				<div class="link_contact_section">
+					<a href="#contact" class="link_contacto_section">
+						¡Te invito a contactarme!
+						<img
+							src="./image/icon-telescope.png"
+							class="icon-telescope"
+							alt="Icon image"
+						/>
+					</a>
+				</div>
 			</div>
-		</form>
+		</section>
+		<!-- INICIO SECCION DANU -->
+		<section class="Danu section" id="Danu">
+			<div class="information">
+				<div class="presentation">
+					<div>
+						<img src="./image/danu.jpg" class="picture" alt="Danu image" />
+					</div>
+					<div class="textPresentation">
+						<h2 class="name">Daniela Gil</h2>
+						<p>
+							Hola, soy Danu una apasionada del mundo IT con una trayectoria en
+							constante evolución. En poco más de un año y medio, he explorado
+							diversas áreas dentro de la tecnología de la información,
+							comenzando mi viaje en el diseño UX/UI y luego aventurándome en el
+							desarrollo web con JavaScript. A lo largo de este tiempo, he
+							adquirido habilidades en React y React Native, y actualmente estoy
+							inmersa en mi formación para convertirme en una desarrolladora
+							full stack con Node.js.
+						</p>
+					</div>
+				</div>
+				<div class="cityPresentation">
+					<div>
+						<img
+							src="./image/jujuy.jpg"
+							class="cityPicture"
+							alt="imagen de Jujuy"
+						/>
+					</div>
+					<p>
+						Déjame contarte un poco sobre mi provincia, Jujuy. Conocida por sus
+						coloridos paisajes y su rica cultura. Desde la Quebrada de Humahuaca
+						hasta las selvas de Yungas, mi provincia ofrece una variedad de
+						paisajes impresionantes. Además, la cocina tradicional, también es
+						muy conocida con platos como el locro y las empanadas.
+					</p>
+				</div>
+				<div class="link_contact_section">
+					<a href="#contact" class="link_contacto_section">
+						¡Te invito a contactarme!
+						<img
+							src="./image/icon-telescope.png"
+							class="icon-telescope"
+							alt="Icon image"
+						/>
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- INICIO SECCION CONTACTO -->
+		<section class="contact-section" id="contact">
+			<form class="form-container" id="form-submit">
+				<h2 class="form-title">Envianos tu comentario</h2>
+				<p class="form-aclaracion">
+					Los campos marcados con <span class="form-asterisk">*</span> son
+					obligatorios
+				</p>
+				<div class="campos-container">
+					<div class="campo-container">
+						<label for="nombre">
+							<span class="form-asterisk">*</span>
+							Nombre:
+						</label>
+						<input
+							type="text"
+							name="nombre"
+							id="nombre"
+							placeholder="Escribe tu nombre"
+							class="error"
+							required
+						/>
+						<span class="mensaje-error">El campo no puede estar vacio...</span>
+					</div>
 
-	</section>
-	<footer class="footer">
-		<nav>
-			<ul class="list_footer">
-				<li class="item_nav_footer">
-					<a href="#" class="link_nav_footer">Quienes somos</a>
-				</li>
-				<li class="item_nav_footer">
-					<a href="#" class="link_nav_footer">Ani</a>
-				</li>
-				<li class="item_nav_footer">
-					<a href="#" class="link_nav_footer">Pao</a>
-				</li>
-				<li class="item_nav_footer">
-					<a href="#" class="link_nav_footer">Martín</a>
-				</li>
-				<li class="item_nav_footer">
-					<a href="#" class="link_nav_footer">Danu</a>
-				</li>
-				<li class="item_nav_contacto_footer">
-					<a href="#" class="link_contacto_footer">Contacto</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="container_github">
-			<p>Hecho por grupo 1</p>
-			<a href="https://github.com/AnaliaAldete/proyectoNode" target="_blank" class="link_github"><i
-					class="fa-brands fa-github-alt"></i></a>
-		</div>
-	</footer>
-	<script src="./script.js"></script>
-</body>
+					<div class="campo-container">
+						<label for="correo">
+							<span class="form-asterisk">*</span>
+							Correo:
+						</label>
+						<input
+							type="email"
+							name="correo"
+							id="correo"
+							placeholder="Escribe tu correo"
+							class="error"
+							required
+						/>
+						<span class="mensaje-error">El campo no puede estar vacio...</span>
+					</div>
 
+					<div class="campo-container">
+						<label for="mensaje">
+							<span class="form-asterisk">*</span>
+							Mensaje:
+						</label>
+						<p class="form-aclaracion">Maximo de 200 caracteres permitidos</p>
+						<textarea
+							name="mensaje"
+							id="mensaje"
+							placeholder="Escribe tu mensaje"
+							maxlength="200"
+							class="error"
+							required
+						></textarea>
+						<span class="mensaje-error">El campo no puede estar vacio...</span>
+					</div>
+
+					<div class="campo-container campo-container-integrantes">
+						<p class="campo-container-p">
+							<span class="form-asterisk">*</span>
+							Elige el integrante que quieras que te responda:
+						</p>
+						<select name="integrante" id="integrante" class="error" required>
+							<option value="" label="Selecciona" selected></option>
+							<option value="Ani">Ani</option>
+							<option value="Oscar">Oscar</option>
+							<option value="Danu">Danu</option>
+							<option value="Martin">Martin</option>
+						</select>
+						<span class="mensaje-error">El campo no puede estar vacio...</span>
+					</div>
+
+					<div class="aceptacion-container">
+						<label>
+							<span class="form-asterisk">*</span>
+							Acepto recibir la respuesta via mail
+							<img src="./image/Icon.png" class="form-icon" alt="Icon image" />
+						</label>
+						<div class="check-mensaje">
+							<input
+								type="checkbox"
+								name="aceptacion"
+								id="check"
+								class="aceptacion error"
+								required
+							/>
+							<span class="mensaje-error"
+								>El campo no puede estar vacio...</span
+							>
+						</div>
+					</div>
+
+					<input type="submit" value="Enviar" class="form-submit" />
+				</div>
+			</form>
+		</section>
+		<!-- INICIO FOOTER -->
+		<footer class="footer">
+			<nav>
+				<ul class="list_footer">
+					<li class="item_nav_footer">
+						<a href="#" class="link_nav_footer">Quienes somos</a>
+					</li>
+					<li class="item_nav_footer">
+						<a href="#" class="link_nav_footer">Ani</a>
+					</li>
+					<li class="item_nav_footer">
+						<a href="#" class="link_nav_footer">Oscar</a>
+					</li>
+					<li class="item_nav_footer">
+						<a href="#" class="link_nav_footer">Martín</a>
+					</li>
+					<li class="item_nav_footer">
+						<a href="#" class="link_nav_footer">Danu</a>
+					</li>
+					<li class="item_nav_contacto_footer">
+						<a href="#" class="link_contacto_footer">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="container_github">
+				<p>Hecho por grupo 1</p>
+				<a
+					href="https://github.com/AnaliaAldete/proyectoNode"
+					target="_blank"
+					class="link_github"
+					><i class="fa-brands fa-github-alt"></i
+				></a>
+			</div>
+		</footer>
+		<script src="./script.js"></script>
+	</body>
 </html>
