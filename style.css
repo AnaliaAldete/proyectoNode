@@ -129,6 +129,7 @@ html {
 }
 
 @media (max-width: 650px) {
+
 	.btn_menu_hamburguesa,
 	.btn_cerrar_menu {
 		display: block;
@@ -245,13 +246,11 @@ html {
 	background-clip: text;
 	color: transparent;
 	background-size: 300%;
-	background-image: linear-gradient(
-		45deg,
-		var(--Grey),
-		yellow,
-		var(--Orange),
-		red
-	);
+	background-image: linear-gradient(45deg,
+			var(--Grey),
+			yellow,
+			var(--Orange),
+			red);
 	animation: fun-animation 2s infinite alternate;
 	margin-top: 8px;
 }
@@ -266,7 +265,7 @@ html {
 	}
 }
 
-.home-title > h3 {
+.home-title>h3 {
 	font-size: 60px;
 	font-weight: 900;
 }
@@ -304,11 +303,11 @@ html {
 	box-shadow: none;
 }
 
-.crew-list-container > ul > li > a,
-.crew-list-container > ul > li > a:focus,
-.crew-list-container > ul > li > a:hover,
-.crew-list-container > ul > li > a:active,
-.crew-list-container > ul > li > a:visited {
+.crew-list-container>ul>li>a,
+.crew-list-container>ul>li>a:focus,
+.crew-list-container>ul>li>a:hover,
+.crew-list-container>ul>li>a:active,
+.crew-list-container>ul>li>a:visited {
 	text-decoration: none;
 	color: var(--White);
 }
@@ -321,7 +320,7 @@ html {
 		margin: 10px;
 	}
 
-	.home-title > h3 {
+	.home-title>h3 {
 		font-size: 35px;
 		margin-bottom: 15px;
 	}
@@ -389,7 +388,7 @@ html {
 		margin: 30px;
 	}
 
-	.home-title > h3 {
+	.home-title>h3 {
 		font-size: 45px;
 		margin-bottom: 15px;
 	}
@@ -450,7 +449,7 @@ html {
 		margin-top: 10px;
 	}
 
-	.home-title > h3 {
+	.home-title>h3 {
 		font-size: 55px;
 	}
 
@@ -502,14 +501,35 @@ html {
 		scroll-margin-top: 20px;
 	}
 }
-.information {
-	border-bottom: 5px solid var(--Grey);
+
+#Ani {
+	background-image: url(./image/fondo1.png);
+	padding-top: 50px;
+}
+
+#Oscar {
+	background-image: url(./image/fondo2.png);
+	padding-top: 50px;
+}
+
+#Martin {
+	background-image: url(./image/fondo1.png);
+	padding-top: 50px;
+}
+
+#Danu {
+	background-image: url(./image/fondo2.png);
+	padding-top: 50px;
 }
 
 .presentation {
 	display: flex;
-	margin: 50px 15vh 50px 15vh;
+	margin: 0px 15vh 50px 15vh;
 	align-items: center;
+	background-color: var(--White);
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 .textPresentation {
@@ -518,7 +538,7 @@ html {
 	margin-left: 10vh;
 }
 
-.textPresentation > p {
+.textPresentation>p {
 	font-size: 18px;
 }
 
@@ -541,6 +561,10 @@ html {
 	flex-direction: row-reverse;
 	align-items: center;
 	margin: 0px 15vh 50px 15vh;
+	background-color: var(--White);
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 .cityPicture {
@@ -552,7 +576,7 @@ html {
 	justify-content: flex-end;
 }
 
-.cityPresentation > p {
+.cityPresentation>p {
 	margin-right: 10vh;
 	font-size: 18px;
 }
@@ -561,7 +585,7 @@ html {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin-bottom: 8vh;
+	padding-bottom: 8vh;
 }
 
 .link_contacto_section {
@@ -569,6 +593,10 @@ html {
 	color: var(--Black);
 	font-weight: bold;
 	text-decoration: none;
+	background-color: var(--White);
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.15);
 }
 
 .icon-telescope {
@@ -579,7 +607,7 @@ html {
 /*---MOBILE SCREEN (Small size)---*/
 @media screen and (max-width: 430px) {
 	.presentation {
-		margin: 20px 5vh 20px 5vh;
+		margin: 0px 5vh 20px 5vh;
 		flex-direction: column;
 	}
 
@@ -594,7 +622,7 @@ html {
 		text-align: center;
 	}
 
-	.textPresentation > p {
+	.textPresentation>p {
 		font-size: 14px;
 	}
 
@@ -608,7 +636,7 @@ html {
 		flex-direction: column;
 	}
 
-	.cityPresentation > p {
+	.cityPresentation>p {
 		margin-right: 0vh;
 		font-size: 14px;
 		margin-top: 3vh;
@@ -620,7 +648,7 @@ html {
 	}
 
 	.link_contact_section {
-		margin-bottom: 3vh;
+		padding-bottom: 3vh;
 	}
 
 	.link_contacto_section {
@@ -632,7 +660,7 @@ html {
 /*---TABLET SCREEN (Medium size)---*/
 @media screen and (min-width: 430px) and (max-width: 730px) {
 	.presentation {
-		margin: 30px 8vh 30px 8vh;
+		margin: 0px 8vh 30px 8vh;
 		flex-direction: column;
 	}
 
@@ -647,7 +675,7 @@ html {
 		text-align: center;
 	}
 
-	.textPresentation > p {
+	.textPresentation>p {
 		font-size: 16px;
 	}
 
@@ -661,7 +689,7 @@ html {
 		flex-direction: column;
 	}
 
-	.cityPresentation > p {
+	.cityPresentation>p {
 		margin-right: 0vh;
 		font-size: 16px;
 		margin-top: 3vh;
@@ -673,7 +701,7 @@ html {
 	}
 
 	.link_contact_section {
-		margin-bottom: 5vh;
+		padding-bottom: 5vh;
 	}
 
 	.link_contacto_section {
@@ -684,7 +712,7 @@ html {
 /*---LAPTOP SCREEN---*/
 @media screen and (min-width: 730px) and (max-width: 930px) {
 	.presentation {
-		margin: 35px 12vh 35px 12vh;
+		margin: 0px 12vh 35px 12vh;
 	}
 
 	.textPresentation {
@@ -696,7 +724,7 @@ html {
 		margin-bottom: 3vh;
 	}
 
-	.textPresentation > p {
+	.textPresentation>p {
 		font-size: 16px;
 	}
 
@@ -709,7 +737,7 @@ html {
 		margin: 0px 12vh 35px 12vh;
 	}
 
-	.cityPresentation > p {
+	.cityPresentation>p {
 		margin-right: 5vh;
 		font-size: 16px;
 	}
@@ -735,6 +763,7 @@ html {
 	background-color: var(--White);
 	scroll-margin-top: 15vh;
 }
+
 @media (max-width: 550px) {
 	.contact-section {
 		scroll-margin-top: 20px;
@@ -781,28 +810,28 @@ html {
 	gap: 5px;
 }
 
-.campo-container > input {
+.campo-container>input {
 	height: 40px;
 	width: 100%;
 	border-radius: 50px;
 	padding: 15px;
 }
 
-.campo-container > textarea {
+.campo-container>textarea {
 	height: 120px;
 	width: 100%;
 	border-radius: 15px;
 	padding: 15px;
 }
 
-.campo-container > select {
+.campo-container>select {
 	height: 40px;
 	width: 150px;
 	border-radius: 50px;
 	padding: 5px 15px;
 }
 
-.campo-container > label {
+.campo-container>label {
 	font-size: 16px;
 	font-weight: 500;
 }
@@ -812,12 +841,12 @@ html {
 	font-weight: 500;
 }
 
-.campo-container > input:focus,
-.campo-container > input:active,
-.campo-container > input:visited,
-.campo-container > input:focus,
-.campo-container > textarea:focus,
-.campo-container > select:focus {
+.campo-container>input:focus,
+.campo-container>input:active,
+.campo-container>input:visited,
+.campo-container>input:focus,
+.campo-container>textarea:focus,
+.campo-container>select:focus {
 	background-color: var(--White);
 	outline: none;
 }
@@ -919,24 +948,24 @@ html {
 		gap: 12px;
 	}
 
-	.campo-container > label {
+	.campo-container>label {
 		font-size: 12px;
 		font-weight: 400;
 	}
 
-	.campo-container > input {
+	.campo-container>input {
 		height: 30px;
 		font-size: 12px;
 		font-weight: 400;
 	}
 
-	.campo-container > textarea {
+	.campo-container>textarea {
 		height: 60px;
 		font-size: 12px;
 		font-weight: 400;
 	}
 
-	.campo-container > select {
+	.campo-container>select {
 		height: 35px;
 		font-size: 12px;
 		font-weight: 400;
@@ -964,7 +993,7 @@ html {
 		border: solid 2px var(--Blue);
 	}
 
-	.aceptacion-container > label {
+	.aceptacion-container>label {
 		font-size: 12px;
 		font-weight: 400;
 		margin-bottom: 5px;
@@ -1005,24 +1034,24 @@ html {
 		gap: 15px;
 	}
 
-	.campo-container > label {
+	.campo-container>label {
 		font-size: 14px;
 		font-weight: 400;
 	}
 
-	.campo-container > input {
+	.campo-container>input {
 		height: 35px;
 		font-size: 14px;
 		font-weight: 400;
 	}
 
-	.campo-container > textarea {
+	.campo-container>textarea {
 		height: 70px;
 		font-size: 14px;
 		font-weight: 400;
 	}
 
-	.campo-container > select {
+	.campo-container>select {
 		height: 35px;
 		font-size: 14px;
 		font-weight: 400;
@@ -1050,7 +1079,7 @@ html {
 		border: solid 3px var(--Blue);
 	}
 
-	.aceptacion-container > label {
+	.aceptacion-container>label {
 		font-size: 14px;
 		font-weight: 400;
 		margin-bottom: 5px;
@@ -1091,24 +1120,24 @@ html {
 		gap: 15px;
 	}
 
-	.campo-container > label {
+	.campo-container>label {
 		font-size: 16px;
 		font-weight: 500;
 	}
 
-	.campo-container > input {
+	.campo-container>input {
 		height: 40px;
 		font-size: 16px;
 		font-weight: 500;
 	}
 
-	.campo-container > textarea {
+	.campo-container>textarea {
 		height: 80px;
 		font-size: 16px;
 		font-weight: 500;
 	}
 
-	.campo-container > select {
+	.campo-container>select {
 		height: 40px;
 		font-size: 16px;
 		font-weight: 500;
@@ -1136,7 +1165,7 @@ html {
 		border: solid 4px var(--Blue);
 	}
 
-	.aceptacion-container > label {
+	.aceptacion-container>label {
 		font-size: 16px;
 		font-weight: 500;
 		margin-bottom: 8px;
