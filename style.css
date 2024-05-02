@@ -34,6 +34,11 @@ html {
 	z-index: 3;
 	height: 15vh;
 }
+@media (max-width: 550px) {
+	.header {
+		height: 10vh;
+	}
+}
 
 .list-nav {
 	display: flex;
@@ -129,7 +134,6 @@ html {
 }
 
 @media (max-width: 650px) {
-
 	.btn_menu_hamburguesa,
 	.btn_cerrar_menu {
 		display: block;
@@ -177,6 +181,11 @@ html {
 	height: 85vh;
 	padding: 30px;
 	scroll-margin-top: 15vh;
+}
+@media (max-width: 550px) {
+	.home-section {
+		height: 90vh;
+	}
 }
 
 .home-fun {
@@ -246,11 +255,13 @@ html {
 	background-clip: text;
 	color: transparent;
 	background-size: 300%;
-	background-image: linear-gradient(45deg,
-			var(--Grey),
-			yellow,
-			var(--Orange),
-			red);
+	background-image: linear-gradient(
+		45deg,
+		var(--Grey),
+		yellow,
+		var(--Orange),
+		red
+	);
 	animation: fun-animation 2s infinite alternate;
 	margin-top: 8px;
 }
@@ -265,7 +276,7 @@ html {
 	}
 }
 
-.home-title>h3 {
+.home-title > h3 {
 	font-size: 60px;
 	font-weight: 900;
 }
@@ -286,12 +297,15 @@ html {
 }
 
 .crew-list {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 	gap: 25px;
 	list-style-type: none;
 }
 
 .home_link {
+	display: block;
+	text-align: center;
 	border: solid 1px var(--White);
 	border-radius: 50px;
 	box-shadow: 5px 3px 7px white;
@@ -303,11 +317,11 @@ html {
 	box-shadow: none;
 }
 
-.crew-list-container>ul>li>a,
-.crew-list-container>ul>li>a:focus,
-.crew-list-container>ul>li>a:hover,
-.crew-list-container>ul>li>a:active,
-.crew-list-container>ul>li>a:visited {
+.crew-list-container > ul > li > a,
+.crew-list-container > ul > li > a:focus,
+.crew-list-container > ul > li > a:hover,
+.crew-list-container > ul > li > a:active,
+.crew-list-container > ul > li > a:visited {
 	text-decoration: none;
 	color: var(--White);
 }
@@ -320,7 +334,7 @@ html {
 		margin: 10px;
 	}
 
-	.home-title>h3 {
+	.home-title > h3 {
 		font-size: 35px;
 		margin-bottom: 15px;
 	}
@@ -374,9 +388,7 @@ html {
 	}
 
 	.crew-list {
-		flex-wrap: wrap;
-		justify-content: center;
-		row-gap: 50px;
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
@@ -388,7 +400,7 @@ html {
 		margin: 30px;
 	}
 
-	.home-title>h3 {
+	.home-title > h3 {
 		font-size: 45px;
 		margin-bottom: 15px;
 	}
@@ -449,7 +461,7 @@ html {
 		margin-top: 10px;
 	}
 
-	.home-title>h3 {
+	.home-title > h3 {
 		font-size: 55px;
 	}
 
@@ -493,12 +505,12 @@ html {
 
 /*------------------------------ INICIO SECCIONES----------------------------------------------------------- */
 .section {
-	scroll-margin-top: 140px;
+	scroll-margin-top: 15vh;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
 	.section {
-		scroll-margin-top: 20px;
+		scroll-margin-top: 0px;
 	}
 }
 
@@ -538,7 +550,7 @@ html {
 	margin-left: 10vh;
 }
 
-.textPresentation>p {
+.textPresentation > p {
 	font-size: 18px;
 }
 
@@ -576,7 +588,7 @@ html {
 	justify-content: flex-end;
 }
 
-.cityPresentation>p {
+.cityPresentation > p {
 	margin-right: 10vh;
 	font-size: 18px;
 }
@@ -622,7 +634,7 @@ html {
 		text-align: center;
 	}
 
-	.textPresentation>p {
+	.textPresentation > p {
 		font-size: 14px;
 	}
 
@@ -636,7 +648,7 @@ html {
 		flex-direction: column;
 	}
 
-	.cityPresentation>p {
+	.cityPresentation > p {
 		margin-right: 0vh;
 		font-size: 14px;
 		margin-top: 3vh;
@@ -675,7 +687,7 @@ html {
 		text-align: center;
 	}
 
-	.textPresentation>p {
+	.textPresentation > p {
 		font-size: 16px;
 	}
 
@@ -689,7 +701,7 @@ html {
 		flex-direction: column;
 	}
 
-	.cityPresentation>p {
+	.cityPresentation > p {
 		margin-right: 0vh;
 		font-size: 16px;
 		margin-top: 3vh;
@@ -724,7 +736,7 @@ html {
 		margin-bottom: 3vh;
 	}
 
-	.textPresentation>p {
+	.textPresentation > p {
 		font-size: 16px;
 	}
 
@@ -737,7 +749,7 @@ html {
 		margin: 0px 12vh 35px 12vh;
 	}
 
-	.cityPresentation>p {
+	.cityPresentation > p {
 		margin-right: 5vh;
 		font-size: 16px;
 	}
@@ -810,28 +822,28 @@ html {
 	gap: 5px;
 }
 
-.campo-container>input {
+.campo-container > input {
 	height: 40px;
 	width: 100%;
 	border-radius: 50px;
 	padding: 15px;
 }
 
-.campo-container>textarea {
+.campo-container > textarea {
 	height: 120px;
 	width: 100%;
 	border-radius: 15px;
 	padding: 15px;
 }
 
-.campo-container>select {
+.campo-container > select {
 	height: 40px;
 	width: 150px;
 	border-radius: 50px;
 	padding: 5px 15px;
 }
 
-.campo-container>label {
+.campo-container > label {
 	font-size: 16px;
 	font-weight: 500;
 }
@@ -841,12 +853,12 @@ html {
 	font-weight: 500;
 }
 
-.campo-container>input:focus,
-.campo-container>input:active,
-.campo-container>input:visited,
-.campo-container>input:focus,
-.campo-container>textarea:focus,
-.campo-container>select:focus {
+.campo-container > input:focus,
+.campo-container > input:active,
+.campo-container > input:visited,
+.campo-container > input:focus,
+.campo-container > textarea:focus,
+.campo-container > select:focus {
 	background-color: var(--White);
 	outline: none;
 }
@@ -948,24 +960,24 @@ html {
 		gap: 12px;
 	}
 
-	.campo-container>label {
+	.campo-container > label {
 		font-size: 12px;
 		font-weight: 400;
 	}
 
-	.campo-container>input {
+	.campo-container > input {
 		height: 30px;
 		font-size: 12px;
 		font-weight: 400;
 	}
 
-	.campo-container>textarea {
+	.campo-container > textarea {
 		height: 60px;
 		font-size: 12px;
 		font-weight: 400;
 	}
 
-	.campo-container>select {
+	.campo-container > select {
 		height: 35px;
 		font-size: 12px;
 		font-weight: 400;
@@ -993,7 +1005,7 @@ html {
 		border: solid 2px var(--Blue);
 	}
 
-	.aceptacion-container>label {
+	.aceptacion-container > label {
 		font-size: 12px;
 		font-weight: 400;
 		margin-bottom: 5px;
@@ -1034,24 +1046,24 @@ html {
 		gap: 15px;
 	}
 
-	.campo-container>label {
+	.campo-container > label {
 		font-size: 14px;
 		font-weight: 400;
 	}
 
-	.campo-container>input {
+	.campo-container > input {
 		height: 35px;
 		font-size: 14px;
 		font-weight: 400;
 	}
 
-	.campo-container>textarea {
+	.campo-container > textarea {
 		height: 70px;
 		font-size: 14px;
 		font-weight: 400;
 	}
 
-	.campo-container>select {
+	.campo-container > select {
 		height: 35px;
 		font-size: 14px;
 		font-weight: 400;
@@ -1079,7 +1091,7 @@ html {
 		border: solid 3px var(--Blue);
 	}
 
-	.aceptacion-container>label {
+	.aceptacion-container > label {
 		font-size: 14px;
 		font-weight: 400;
 		margin-bottom: 5px;
@@ -1120,24 +1132,24 @@ html {
 		gap: 15px;
 	}
 
-	.campo-container>label {
+	.campo-container > label {
 		font-size: 16px;
 		font-weight: 500;
 	}
 
-	.campo-container>input {
+	.campo-container > input {
 		height: 40px;
 		font-size: 16px;
 		font-weight: 500;
 	}
 
-	.campo-container>textarea {
+	.campo-container > textarea {
 		height: 80px;
 		font-size: 16px;
 		font-weight: 500;
 	}
 
-	.campo-container>select {
+	.campo-container > select {
 		height: 40px;
 		font-size: 16px;
 		font-weight: 500;
@@ -1165,7 +1177,7 @@ html {
 		border: solid 4px var(--Blue);
 	}
 
-	.aceptacion-container>label {
+	.aceptacion-container > label {
 		font-size: 16px;
 		font-weight: 500;
 		margin-bottom: 8px;
